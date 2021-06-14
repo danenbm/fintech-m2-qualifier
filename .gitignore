@@ -130,3 +130,6 @@ dmypy.json
 
 # MAC finder file DS_Store
 .DS_Store
+
+# VS Code file
+.vscode
