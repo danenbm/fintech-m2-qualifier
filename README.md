@@ -28,7 +28,7 @@ pip install pytest
 
 Here is an example csv output file created by this application, containing the qualifying loans for a user.
 
-![example output](Images/qualifying_loans.png)
+![example output](images/qualifying_loans.png)
 
 ---
 
@@ -41,7 +41,7 @@ python app.py
 
 It will prompt for the rate sheet and customer information, then it will provide you with the number of qualifying loans and the option to save it to a csv output file.
 
-![usage example](Images/loan_qualifier.png)
+![usage example](images/loan_qualifier.png)
 
 ---
 
