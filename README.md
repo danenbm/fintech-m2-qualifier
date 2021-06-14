@@ -1,39 +1,56 @@
-# Project Title
+# Loan Qualifier
 
-Just after the title, introduce your project by describing attractively what the project is about and what is the main problem that inspires you to create this project or what is the main contribution for the potential user of your project.
+This application allows users to easily see what loans they are eligible to get from various banks.  It prompts for a bank rate sheet of lender criteria, and a few pieces of customer data about the loan they are seeking, and then it automates the process of determining which banks can meet their lending needs.
 
 ---
 
 ## Technologies
 
-Describe the technologies required to use your project such as programming languages, libraries, frameworks, and operating systems. Be sure to include the specific versions of any critical dependencies that you have used in the stable version of your project.
+This application is written in Python 3.7 and uses the following packages:
+* [fire](https://google.github.io/python-fire/guide/) - For basic command line interface.
+* [questionary](https://questionary.readthedocs.io/en/stable/) - For interactive user prompts and dialog.
+* [pytest](https://docs.pytest.org) - For unit tests.
 
 ---
 
 ## Installation Guide
 
-In this section, you should include detailed installation notes containing code blocks and screenshots.
+Before running the application, install the dependencies:
+```bash
+pip install fire
+pip install questionary
+pip install pytest
+```
 
 ---
 
 ## Examples
 
-This section should include screenshots, code blocks, or animations showing how your project works.
+Here is an example csv output file created by this application, containing the qualifying loans for a user.
+
+![example output](Images/qualifying_loans.png)
 
 ---
 
 ## Usage
 
-This section should include screenshots, code blocks, or animations explaining how to use your project.
+Run the application in python
+```python
+python app.py
+```
+
+It will prompt for the rate sheet and customer information, then it will provide you with the number of qualifying loans and the option to save it to a csv output file.
+
+![usage example](Images/loan_qualifier.png)
 
 ---
 
 ## Contributors
 
-In this section, list all the people who contribute to this project; since you may want to be reached by recruiters or potential collaborators, include your contact e-mail, and optionally your LinkedIn or Twitter profile.
+Michael Danenberg
 
 ---
 
 ## License
 
-When you share a project on a repository, especially a public one, it's important to choose the right license to specify others what they can and can not do with your source code and files. Use this section to include the licence you want to use.
+MIT
